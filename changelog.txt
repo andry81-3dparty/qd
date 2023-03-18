@@ -1,0 +1,57 @@
+2023.03.18:
+* changed: .externals: externals update
+* changed: CMakeLists.txt, changelog.txt, README_EN.txt: moved from child branch
+* changed: `trunk` and `2_3_22_release` branch merge
+
+2020.05.25:
+* fixed: Linux x86_64 build fix
+
+2020.02.10:
+* changed: readme update
+
+2020.01.24:
+* fixed: license information
+* changed: cutted off the version reference from the readme file as may change frequently
+
+2019.11.24:
+* changed: readme update
+
+2019.10.07:
+* changed: cmake: switch to last tacklelib library
+
+2019.02.09:
+* changed: merge with the library changes from version 2.3.22 (2018.11.09) from http://crd-legacy.lbl.gov/~dhbailey/mpdist/
+
+2018.11.20:
+* new: ENABLE_QD_INTEGRATION definition usage
+* refactor: ENABLE_* variables usage refactor
+* refactor: removed QD_INTEGRATION_ENABLED variable usage
+
+2018.09.24:
+* fixed: rare out-of-range bug in output from trigonometric functions like `dd_real::asin` because of sloppy arithmetic outside and inside a function call
+* new: overload for QD math `nextafter` function
+
+2018.09.20:
+* changed: missed fmod function overload
+* refactor: most of standard math functions injected into std namespace to enable overload from std namespace.
+
+2018.08.14:
+* refactor: cmake: moved all cmake lists to use basic initialization routine
+
+2018.08.09:
+* fixed: linux build
+
+2018.07.25:
+* fixed: min/max macro definitions
+* new: implemented more missed operators in dd_real/qd_real
+* new: globals.h header for additional types and functions
+
+2018.07.23:
+* fixed: 3dparty QD dd_real::pow in case of zero values
+
+2018.07.20:
+* fixed: 3dparty QD dd_real::pow does not expect negative first value even if second value is equal to an integer but not an integer type
+
+2018.07.16:
+* new: changelog
+* new: initial patched sources fork
